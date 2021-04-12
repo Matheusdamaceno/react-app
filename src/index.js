@@ -4,6 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import firebase from 'firebase'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA6B-uFViW7xyo5h0WmnzStL4ItVXhdRLw",
+  authDomain: "react-firebase-ex-8b726.firebaseapp.com",
+  projectId: "react-firebase-ex-8b726",
+  storageBucket: "react-firebase-ex-8b726.appspot.com",
+  messagingSenderId: "759490807164",
+  appId: "1:759490807164:web:699fd972a8844968a1d0f9"
+};
+
+firebase.initializeApp(firebaseConfig)
+
+export const db = firebase.firestore()
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
